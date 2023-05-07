@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Manrope-Regular;
+  font-style: normal;
+  src: url('./assets/fonts/Manrope-Regular.ttf');
+}
+
+@font-face {
+  font-family: Manrope-Medium;
+  font-style: normal;
+  src: url('./assets/fonts/Manrope-Medium.ttf');
+}
+
+@font-face {
+  font-family: Manrope-Bold;
+  font-style: normal;
+  src: url('./assets/fonts/Manrope-Bold.ttf');
+}
+
+@font-face {
+  font-family: Inter-Medium;
+  font-style: normal;
+  src: url('./assets/fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  font-style: normal;
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+
+@import 'overlayscrollbars/overlayscrollbars.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Manrope-Medium, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.38;
+  background-color: #fdf7f2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 16px;
+  }
+}
